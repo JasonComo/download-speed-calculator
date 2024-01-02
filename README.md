@@ -10,7 +10,7 @@ Key features:
 ## Installation
 Clone the the repository.
 ```
-git clone JasonComo/download-time-calculator
+git clone https://github.com/JasonComo/download-time-calculator.git
 ```
 
 Navigate to the repository.
