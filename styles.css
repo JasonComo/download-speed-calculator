@@ -1,0 +1,216 @@
+html {
+    font-size: 1rem;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cascadia Code';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('assets/sand.jpg');
+    background-size: cover;
+}
+
+.container {
+    color: white;
+    border-radius: 1.25em;
+    height: 34.375em;
+    width: 40em;
+    background: rgb(20, 20, 20);
+}
+
+.header {
+    margin: 3.125em;
+}
+
+.middle-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25em;
+}
+
+.entry-content {
+    font-size: 1.40625rem;
+    text-align: left;
+    margin-left: 1.875em;
+}
+
+.file-size input,
+.download-speed input {
+    height: 1.875em;
+    width: 12.5em;
+    font-size: 1rem;
+}
+
+.download-speed {
+    margin-top: 1.5625em;
+}
+
+.download-speed select,
+.file-size select {
+    height: 1.875em;
+    width: 7em;
+    font-size: 1rem;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.875em;
+}
+
+#calc-button {
+    font-family: 'Cascadia Code';
+    font-size: 1.40625rem;
+    color: white;
+    border: none;
+    border-radius: 0.9375em;
+    margin-top: 1.5625em;
+    padding: 0.3125em 0.625em;
+    background-color: rgb(84, 186, 113);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#calc-button:hover {
+    transform: scale(1.1);
+}
+
+#calc-button:active {
+    background-color: rgb(119, 173, 135);
+}
+
+#reset-button {
+    font-family: 'Cascadia Code';
+    font-size: 1.40625rem;
+    color: white;
+    border: none;
+    margin-top: 0.9375em;
+    border-radius: 0.9375em;
+    padding: 0.3125em 0.625em;
+    background-color: rgb(218, 85, 85);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#reset-button:hover {
+    transform: scale(1.1);
+}
+
+#reset-button:active {
+    background-color: rgb(211, 109, 109);
+}
+
+.lower-content {
+    font-size: 1.40625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.875em;
+}
+
+#countdown-button {
+    font-family: 'Cascadia Code';
+    font-size: 1.40625rem;
+    color: black;
+    border: none;
+    border-radius: 0.9375em;
+    background-color: white;
+    margin: 1.875em;
+    padding: 0.3125em 0.625em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#countdown-button:hover {
+    transform: scale(1.1);
+}
+
+#countdown-button:active {
+    background-color: grey;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: calc(1rem * 0.75 * 0.75);
+
+    }
+
+
+    .entry-content {
+        font-size: calc(1.40625rem * 0.75 * 0.75);
+
+    }
+
+    .file-size input,
+    .download-speed input {
+
+        font-size: calc(1rem * 0.75 * 0.75);
+    }
+
+    .download-speed {
+        margin-top: calc(1.5625em * 0.75 * 0.75);
+    }
+
+    .download-speed select,
+    .file-size select {
+        font-size: calc(1rem * 0.75 * 0.75);
+    }
+
+
+    #calc-button,
+    #reset-button,
+    #countdown-button {
+        font-size: calc(1.40625rem * 0.75 * 0.75);
+
+    }
+
+    .lower-content {
+        font-size: calc(1.40625rem * 0.75 * 0.75);
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        font-size: calc(1rem * 0.75);
+    }
+
+    .entry-content {
+        font-size: calc(1.40625rem * 0.75);
+    }
+
+    .file-size input,
+    .download-speed input {
+        font-size: calc(1rem * 0.75);
+    }
+
+    .download-speed {
+        margin-top: calc(1.5625em * 0.75);
+    }
+
+    .download-speed select,
+    .file-size select {
+        font-size: calc(1rem * 0.75);
+    }
+
+    #calc-button,
+    #reset-button,
+    #countdown-button {
+        font-size: calc(1.40625rem * 0.75);
+    }
+
+    .lower-content {
+        font-size: calc(1.40625rem * 0.75);
+    }
+
+}

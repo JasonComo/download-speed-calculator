@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/CascadiaCode.ttf" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>DOWNLOAD TIME CALCULATOR</h1>
+    </div>
+    <div class="middle-content">
+      <div class="entry-content">
+        <div class="file-size">
+          <p>File Size</p>
+          <input type="number" id="file-size" name="file-size" placeholder="Enter file size" />
+          <select id="file-size-unit" name="file-size-unit">
+            <option value="bytes">Bytes</option>
+            <option value="kilobytes">Kilobytes</option>
+            <option value="megabytes">Megabytes</option>
+            <option value="gigabytes">Gigabytes</option>
+          </select>
+        </div>
+        <div class="download-speed">
+          <p>Download Speed</p>
+          <input type="number" id="download-speed" name="download-speed" placeholder="Enter download speed" />
+          <select id="download-speed-unit" name="download-speed-unit">
+            <option value="b/s">b/s</option>
+            <option value="kb/s">kb/s</option>
+            <option value="mb/s">mb/s</option>
+            <option value="gb/s">gb/s</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-div">
+        <button id="calc-button">CALCULATE</button>
+        <button id="reset-button">RESET</button>
+      </div>
+    </div>
+    <div class="lower-content">
+      <div class="time-result" id="time-result"></div>
+      <div class="countdown-stop-button" id="countdown-stop-button"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
